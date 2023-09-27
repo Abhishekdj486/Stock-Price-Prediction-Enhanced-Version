@@ -23,17 +23,7 @@ with st.container():
         enddate = datetime(2023, 4, 26)
 
         st.title('Stock Price Prediction')
-        st.subheader('Ticker Information')
-
-        # Define the file path
-        file_path = "C:/Users/abhis/project/Small.xlsx"
-
-        # Read the Excel file into a Pandas DataFrame
-        df = pd.read_excel(file_path)
-
-        # Display the DataFrame using Streamlit's dataframe() function
-        st.dataframe(df)
-
+        
         # fetch the stock prices using pandas_datareader
         user_input = st.text_input('Enter Stock Ticker')
         if user_input != None:
